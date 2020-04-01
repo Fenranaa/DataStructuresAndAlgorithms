@@ -1,19 +1,22 @@
 package cn.fenrana;
 
+import cn.fenrana.stack.FixedCapacityStack;
+
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        char a = '1';
-        String b = "2";
+        FixedCapacityStack<String> a = new FixedCapacityStack<>(10);
 
-        System.out.println(a + b);
+        a.push("aaa");
+        a.push("bbb");
+        a.push("ccc");
+        a.push("ddd");
 
-        String []strarr = {"1", "2", "3"};
-
-        List<String> strings = Arrays.asList(strarr);
-
+        for (String s: a) {
+            System.out.println(s);
+        }
 
     }
 }
