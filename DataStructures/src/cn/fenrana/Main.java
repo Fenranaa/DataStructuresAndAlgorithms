@@ -17,6 +17,15 @@ public class Main {
         for (String s: a) {
             System.out.println(s);
         }
+        var aa = new Hashtable<String, String>();
+        var b = new HashMap<String, String>();
+
+        List<String> list = new ArrayList<>();
+        list.add("aa");
+
+        Map<String, String> treeMap = new TreeMap<>();
+
+        Stack<String> aaaa  = new Stack<>();
 
     }
 }
